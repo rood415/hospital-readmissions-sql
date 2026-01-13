@@ -60,20 +60,6 @@ Place the CSV file in the `data/` directory before running the database creation
 
 ---
 
-## Project Structure
-hospital-performance-sql/
-├── data/
-│   ├── hrrp_readmissions.csv   # Raw CMS data (not versioned if large)
-│   └── .gitkeep
-│
-├── sql/
-│   └── analysis.sql            # Core SQL analysis queries
-│
-├── create_db.py                # Script to create SQLite database from CSV
-├── README.md
-
----
-
 ## Database Schema
 The SQLite database (`hospital.db`) contains one primary table:
 
@@ -121,3 +107,4 @@ WHERE excess_readmission_ratio > 1.25
 ORDER BY excess_readmission_ratio DESC;
 
 ```
+
