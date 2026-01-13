@@ -1,0 +1,11 @@
+# SQLite database files
+*.db
+
+# Python cache
+__pycache__/
+
+# VS Code settings
+.vscode/
+
+# OS junk
+.DS_Store
